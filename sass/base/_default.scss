@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bg-color;
+  position: relative;
+  font-family: $mainFontReg;
+  letter-spacing: 0.7px;
+}
+
+a,
+button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:focus,
+button:focus,
+img:focus {
+  outline: none;
+}

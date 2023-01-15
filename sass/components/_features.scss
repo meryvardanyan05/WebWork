@@ -1,0 +1,31 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__container {
+    background: linear-gradient(
+      147.19deg,
+      #362a87 -2.99%,
+      #2c2747 82.25%,
+      #4323f1 157.46%
+    );
+    width: 100%;
+    height: 813px;
+    margin: 80px 80px 180px 80px;
+    padding: 75px 55px;
+    border-radius: 26px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      top: -10%;
+      right: -5%;
+      width: 280px;
+      height: 280px;
+      background-color: rgba(99, 133, 253, 0.1);
+      filter: blur(115px);
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+}

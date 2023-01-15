@@ -1,0 +1,85 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    margin: 137px 0;
+    width: 40%;
+    &__text {
+      max-width: 240px;
+      margin-bottom: 54px;
+    }
+    &__textWithCheck {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      margin-top: 20px;
+      & > *:nth-child(even) {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -10px;
+          width: 2px;
+          height: 12px;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 4px;
+        }
+      }
+    }
+    &__textWithStars {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 64px;
+    }
+    &__logoSection {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 32px;
+    }
+  }
+  &__right {
+    width: 50%;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    &__left {
+      justify-content: center;
+      text-align: center;
+      width: 70%;
+      margin-top: 20px;
+      &__text {
+        max-width: none;
+      }
+      a {
+        width: 100%;
+      }
+      &__textWithCheck,
+      &__textWithStars,
+      &__logoSection {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .banner {
+    &__right {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  height: 375px;
+  background: url(../../images/footer.png) right bottom no-repeat,
+    linear-gradient(147.19deg, #362a87 -2.99%, #2c2747 82.25%, #4323f1 157.46%)
+      no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 300px;
+  padding-top: 120px;
+}

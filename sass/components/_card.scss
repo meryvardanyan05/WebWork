@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  gap: 20px;
+  padding-left: 73px;
+  height: calc(100% - 90px);
+
+  &__img {
+    position: absolute;
+    top: -13%;
+    right: -15%;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    &__list {
+      margin-top: 10px;
+      margin-bottom: 50px;
+      list-style: none;
+      & > li {
+        padding-left: 23px;
+        position: relative;
+        max-width: 100px;
+      }
+
+      & > li::before {
+        position: absolute;
+        content: url("../../images/check-green.svg");
+        width: 13px;
+        height: 10px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  & > *:last-child {
+    align-self: flex-end;
+  }
+}

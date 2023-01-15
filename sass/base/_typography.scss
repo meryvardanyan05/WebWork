@@ -1,0 +1,91 @@
+.heading {
+  font-size: 49px;
+  line-height: 69px;
+  &--orange {
+    text-transform: uppercase;
+    font-family: $mainFontBoldItalic;
+    color: $orange;
+  }
+  &--white {
+    font-family: $mainFontReg;
+    color: $white;
+    text-transform: none;
+  }
+}
+.white-text-sm {
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+}
+
+.title-white {
+  font-family: $mainFontSemiBold;
+  color: $white;
+  font-size: 39px;
+  line-height: 52px;
+}
+.title-white-sm {
+  font-family: $mainFontSemiBold;
+  color: $white;
+  font-size: 31px;
+  line-height: 42px;
+}
+.title-orange {
+  font-family: $mainFontSemiBold;
+  color: $orange;
+  font-size: 39px;
+  line-height: 52px;
+}
+.card-title {
+  font-family: $mainFontBold;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 39px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.card-big-price {
+  font-family: $mainFontBold;
+  color: $white;
+  font-size: 80px;
+  line-height: 100px;
+}
+.card-old-price {
+  font-family: $mainFontSemiBold;
+  color: $white;
+  font-size: 31px;
+  line-height: 58px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 3.36px;
+    background: rgba(243, 84, 180, 1);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: matrix(0.96, -0.27, -0.27, -0.96, 0, 0);
+    border-radius: 15px;
+  }
+}
+
+.card-text-opacity {
+  font-family: $mainFontSemiBold;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 28px;
+  line-height: 24px;
+}
+.card-sm-text {
+  font-family: $mainFontReg;
+  color: $white;
+  font-size: 14px;
+}
+
+.features-tab-text {
+  font-family: $mainFontSemiBold;
+  color: $white;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
